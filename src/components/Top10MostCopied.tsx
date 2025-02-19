@@ -33,7 +33,7 @@ const Top10MostCopied = () => {
     copiedTimes: number;
   }) => {
     return (
-      <div className="flex items-center gap-4 hover:bg-gray-100 duration-200 rounded-lg px-4 py-2">
+      <div className="flex items-center gap-4 hover:bg-gray-100 duration-200 rounded-lg p-2">
         <p className="text-xl text-gray-600">#{rank}</p>
 
         <div className="flex-grow  ">
@@ -78,9 +78,9 @@ const Top10MostCopied = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 hover:bg-gray-200 duration-200 rounded-full px-2 py-1">
+        <div className="flex items-center gap-2 hover:bg-gray-200 duration-200 rounded-full px-2 py-1 text-gray-700">
           <p>{copiedTimes}</p>
-          <Image src={copy} alt="copy" width={16} height={16} />
+          <Image src={copy} alt="copy" width={20} height={20} className="h-5 w-5 opacity-70" />
         </div>
       </div>
     );
